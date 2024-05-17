@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..600&display=swap');
+
+:root {
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  --tr-base-font-size: 1rem; /* 16px */
+  --tr-xs-font-size: 0.75rem; /* 12px */
+  --tr-sm-font-size: 0.875rem; /* 14px */
+  --tr-md-font-size: 1.375rem; /* 22px */
+
+  --tr-grey: #9ea3a9;
+  --tr-off-white: #f7f7f8;
+  --tr-white: #ffffff;
+  --tr-black: #181a1b;
+  --tr-bg-blue: #2d68a2;
+  --tr-red: #e95050;
+  --tr-green: #4db24d;
+}
+
+body {
+  height: 100%;
+  /* min-height: 100vh; */
+  color: var(--tr-black);
+  background: var(--tr-white);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  font-family: 'Inter', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}*/
