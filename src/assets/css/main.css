@@ -40,11 +40,10 @@
 
 @layer components {
   .base-btn {
-    @apply font-normal text-[var(--tr-black)] flex items-center space-x-1.5;
+    @apply font-normal text-[var(--tr-black)] flex items-center space-x-1 hover:bg-[var(--tr-off-white)] px-2 py-1 rounded-sm;
     span {
       font-size: var(--tr-sm-font-size);
       line-height: 16.24px;
-      text-align: left;
     }
   }
 }
@@ -60,10 +59,20 @@
       }
     }
   }
+
+  .todo-layout {
+    @apply flex flex-col bg-[var(--tr-off-white)] rounded-lg p-1.5 h-fit max-h-full overflow-hidden;
+    min-width: 272px;
+    width: 272px;
+    &.empty-layout {
+      @apply bg-transparent p-0 rounded-none;
+    }
+  }
 }
 
-/* #app {
-  max-width: 1280px;
+#app {
+  @apply h-full;
+  /* max-width: 1280px;
   margin: 0 auto;
-  font-weight: normal;
-} */
+  font-weight: normal; */
+}
