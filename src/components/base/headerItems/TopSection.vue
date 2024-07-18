@@ -7,28 +7,31 @@ import infoIcon from '../../../assets/images/svgs/info-circle.svg'
 import notificationIcon from '../../../assets/images/svgs/notification.svg'
 import profileImg from '../../../assets/images/profile.png'
 import searchIcon from '../../../assets/images/svgs/search.svg'
-import RoundedBtn from '../buttons/RoundedBtn.vue'
-import BaseBtn from '../buttons/BaseBtn.vue'
 </script>
 
 <template>
   <section class="nav-header top-section">
     <section>
-      <RoundedBtn class="bg-[var(--tr-off-white)]">
+      <RoundedButton class="bg-[var(--tr-off-white)]">
         <template #label>
           <img :src="menuIcon" alt="menu icon" />
         </template>
-      </RoundedBtn>
-      <RoundedBtn class="bg-[var(--tr-off-white)]">
+      </RoundedButton>
+      <RoundedButton class="bg-[var(--tr-off-white)]">
         <template #leftIcon>
           <img :src="homeIcon" alt="home icon" />
         </template>
-      </RoundedBtn>
-      <RoundedBtn class="circular-icon add-icon">
+      </RoundedButton>
+      <RoundedButton class="circular-icon add-icon">
         <template #leftIcon>
           <img :src="addIcon" alt="add icon" />
         </template>
-      </RoundedBtn>
+      </RoundedButton>
+    </section>
+    <section>
+      <div class="app-logo">
+        <img :src="trelloLogo" alt="Trello Logo" />
+      </div>
     </section>
     <section>
       <div class="search">
@@ -42,16 +45,18 @@ import BaseBtn from '../buttons/BaseBtn.vue'
           <img :src="infoIcon" alt="info icon" />
         </template>
       </RoundedBtn>
+
       <RoundedBtn class="bg-[var(--tr-off-white)]">
         <template #leftIcon>
           <img :src="notificationIcon" alt="notification icon" />
         </template>
       </RoundedBtn>
-      <BaseBtn class="profile-img">
+
+      <RoundedButton class="profile-img">
         <template #leftIcon>
           <img :src="profileImg" alt="profile image" />
         </template>
-      </BaseBtn>
+      </RoundedButton>
     </section>
   </section>
 </template>

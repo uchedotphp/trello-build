@@ -3,6 +3,7 @@ import './assets/css/main.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import BaseButton from './components/base/buttons/BaseBtn.vue'
+// import { BaseBtn as BaseButton } from './components/base/buttons'
 import RoundedButton from './components/base/buttons/RoundedBtn.vue'
 
 import App from './App.vue'

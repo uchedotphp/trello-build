@@ -13,7 +13,7 @@ import BottomSection from './BottomSection.vue'
 
 <style lang="scss" scoped>
 header {
-  @apply fixed w-full;
+  @apply w-full bg-white;
   box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.1);
   & > * {
     padding: 8px 20px;
