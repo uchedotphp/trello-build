@@ -52,6 +52,12 @@ import searchIcon from '../../../assets/images/svgs/search.svg'
         </template>
       </RoundedBtn>
 
+      <RoundedBtn class="bg-[var(--tr-off-white)]">
+        <template #leftIcon>
+          <img :src="notificationIcon" alt="notification icon" />
+        </template>
+      </RoundedBtn>
+
       <RoundedButton class="profile-img">
         <template #leftIcon>
           <img :src="profileImg" alt="profile image" />

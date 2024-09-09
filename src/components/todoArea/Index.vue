@@ -9,7 +9,7 @@ import { todos } from './dummyData'
 
 <template>
   <section class="h-full overflow-y-hidden overflow-x-scroll flex space-x-4">
-    <div class="todo-layout" v-for="(n, title) in todos" :key="n">
+    <div class="todo-layout" v-for="(index, title) in todos" :key="index">
       <section class="category">
         <span class="title">
           {{ title }}
