@@ -17,13 +17,13 @@ import { todos } from './dummyData'
         <span class="flex items-center">
           <BaseBtn>
             <template #leftIcon>
-              <img :src="AddIcon" alt="" />
+              <img :src="AddIcon" alt="add-icon" />
             </template>
           </BaseBtn>
 
           <BaseBtn>
             <template #leftIcon>
-              <img :src="ellipsisIcon" alt="" />
+              <img :src="ellipsisIcon" alt="ellipsis-icon" />
             </template>
           </BaseBtn>
         </span>
